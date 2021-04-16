@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack-app",
+  "name": "react-tutorial-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -32,7 +32,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --open --port 7080 --contentBase src --hot",
+    "dev": "webpack-dev-server --open --port 7079 --contentBase src --hot",
     "build": "webpack --progress --colors --profile"
   },
   "keywords": [],
