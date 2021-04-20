@@ -92,9 +92,10 @@ module.exports = {
     },
     resolve: {
         alias: {
-            "_": [
+            "@": [
                 path.resolve(__dirname, "./src"),
                 path.resolve(__dirname, "./src/css"),
+                path.resolve(__dirname, "./src/components"),
             ]
         },
         extensions: [".jsx", ".js"],
