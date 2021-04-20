@@ -18,6 +18,13 @@ onerror(app)
 app.use(bodyparser({
   enableTypes:['json', 'form', 'text']
 }))
+// 处理跨域
+app.use(async (ctx, next) => {
+  console.log('handling')
+  ctx.set("Access-Control-Allow-Origin", "*")
+  await next()
+})
+
 app.use(json())
 app.use(logger())
 app.use(require('koa-static')(__dirname + '/public'))
@@ -25,9 +32,10 @@ app.use(require('koa-static')(__dirname + '/public'))
 app.use(views(__dirname + '/views', {
   extension: 'ejs'
 }))
-
-// pv
 app.use(pv())
+
+
+
 // logger
 app.use(async (ctx, next) => {
   const start = new Date()
