@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "123456",
+      "auth": "0"
+    },{
+      "username": "spskauynnda",
+      "password": "1234567",
+      "auth": "4"
+    },{
+      "username": "spskauynnda",
+      "password": "1234567",
+      "auth": "6"
+    },{
+      "username": "spskauynnda",
+      "password": "1234567",
+      "auth": "1"
+    }
+  ]
+}
