@@ -1,8 +1,8 @@
-import '_/index.css'
-import '_/custom.css'
-import '_/base.less'
+import '@/index.css'
+import '@/custom.css'
+import '@/base.less'
 
-import App from '_/App'
+import App from '@/App'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
