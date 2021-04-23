@@ -21,7 +21,7 @@ app.use(bodyparser({
 // 处理跨域
 app.use(async (ctx, next) => {
   console.log('handling')
-  ctx.set("Access-Control-Allow-Origin", "*")
+  ctx.set("Access-Control-Allow-Origin", "http://localhost:63342")
   await next()
 })
 
